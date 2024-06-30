@@ -41,6 +41,28 @@ Para ver de clic aqui: <a href="https://cricapoga.github.io/Encriptador-de-Texto
   <li>Diseño adaptable (responsive design) para asegurar que la aplicación funcione y se vea bien en distintos dispositivos, incluidos PC, tabletas y teléfonos móviles. Esto se logró utilizando CSS Media Queries para ajustar el diseño y la disposición de los elementos según el tamaño de la pantalla.</li>
 </ul>
 
+<h2>Método de Encriptación</h2>
+<p>El método de encriptación utilizado es una modificación propia del algoritmo de encriptación César. La encriptación César consiste en desplazar los caracteres del mensaje una cierta cantidad de espacios.<br>Para el desplazamiento se usó la tabla de valores <a href="https://elcodigoascii.com.ar/">ASCII</a></p>
+
+<h3>Ejemplo:</h3>
+<b>Clave:</b> 3 
+<br>
+<b>Entrada:</b> A 
+<br><br>
+<table>
+  <tr><td><b>A -></b> +1 = B</td></tr>
+  <tr><td><b>A -></b> +2 = C</td></tr>
+  <tr><td><b>A -></b> +3 = D</td></tr>
+</table>
+<b>Salida:</b> D 
+
+<h3>Modificación Propia</h3>
+<p>Mi modificación consiste en asignar un valor de orden desde 0 a 699 a cada carácter. Las reglas para el desplazamiento son las siguientes:</p>
+<ul>
+  <li>Si el valor del carácter es par, se desplaza 4 caracteres adelante.</li>
+  <li>Si el valor del carácter es impar, se desplaza 4 caracteres atrás.</li>
+</ul>
+
 <h2>Conclusión</h2>
 <p>Este encriptador y desencriptador de texto es una herramienta práctica y educativa que demuestra el uso del Cifrado César 
 modificado en una aplicación web. A través de este proyecto, se aprendió y aplicó el manejo de HTML, CSS y JavaScript, así como 
