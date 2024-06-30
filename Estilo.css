@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --colorAzul: #0A3871;
+    --colorAzulGrisaceo: #343A40;
+    --colorGris: #D8DFE8;
+    --colorGrisOscuro: #495057;
+    --colorFondo: #F3F5FC;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    box-sizing: border-box;
+    padding-top: 1%;
+    padding-left: 1%;
+    font-family: "Inter", sans-serif;
+    background-color: var(--colorFondo);
+}
+
+#logo{
+    height: 60px;
+    box-sizing: border-box;
+}
+
+#contenido{
+    display: flex;
+    justify-content: space-around;
+    gap:80px;
+    flex-wrap: wrap;/*Para que lo de al lado baje para cuando se achique la pantalla*/
+    padding: 4%;
+    padding-top:2%;
+}
+
+section{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#entrada{
+    width: 90%;
+    height: 80%;
+    font-size: 2rem;
+    border: none;
+    background-color:  var(--colorFondo);
+    color: var(--colorAzul);
+    resize: none; /* Evita el redimensionamiento */
+}
+
+::placeholder{
+    color: var(--colorAzul);
+}
+
+#icon {
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+}
+
+#informacion{
+    font-size: 0.75rem;
+}
+
+button {
+    background-color: var(--colorGris);
+    border: 2px var(--colorAzul) solid;
+    color: var(--colorAzul);
+
+    cursor: pointer;
+
+    border-radius: 24px;
+    width: 40%;
+    height: 55px;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.botones button:first-child{
+    background-color: var(--colorAzul);
+    color: white;
+}
+
+#botonEncriptar:hover, #botonDesencriptar:hover, #botonCopiar:hover{
+    filter: brightness(0.5);
+}
+
+aside{
+    width: 30%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 32px;
+    padding: 3%;
+}
+
+#imagen {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#subtSalida {
+    font-size: 1.5rem;
+}
+
+#salida{
+    width: 100%;
+    font-size: 1rem;
+    
+    overflow-wrap: break-word;/*Para el salto de linea*/
+    word-break: break-all;/* Para manejar palabras muy largas */
+}
+
+#botonCopiar{
+    visibility: hidden;
+    display: inline-block;/*Centrar el texto del boton*/
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Estilo.css" />
+    <link rel="icon" href="assets/icon.png"/>
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <img src="assets/4.png" alt="Logo de CRICAPOGA" id="logo" />
+    </header>
+    <div id="contenido">
+      <!-- Contenido Entrada y Botones -->
+      <section>
+        <textarea type="text" id="entrada" placeholder="Ingrese el texto aqui:"></textarea>
+        <br>
+        <div>
+            <!-- icon Info -->
+            <p id="informacion">
+                <img src="assets/info.png" alt="Icon informacion" id="icon">
+                Solo letras minúsculas y sin acentos
+            </p>
+            <div class="botones">
+                <button id="botonEncriptar" onclick="encriptar()">ENCRIPTAR</button>
+                <button id="botonDesencriptar" onclick="desencriptar()">DESENCRIPTAR</button>
+            </div>
+        </div>
+      </section>
+      <!-- Contenido Salida -->
+      <aside>
+        <img src="assets/Brain.png" alt="Pensando" id="imagen" />
+        <div>
+            <h2 id="subtSalida">Ningún mensaje fue encontrado</h2>
+            <p id="salida">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <button class="botones" id="botonCopiar" onclick="copiar()">COPIAR</button>
+      </aside>
+    </div>
+    <!-- Script -->
+    <script src="Interactividad.js"></script>
+  </body>
+</html>
