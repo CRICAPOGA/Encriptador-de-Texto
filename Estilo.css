@@ -8,6 +8,8 @@
     --colorFondo: #F3F5FC;
 }
 
+
+/* COMPUTADOR */
 html, body{
     margin: 0;
     padding: 0;
@@ -55,6 +57,7 @@ section{
 }
 
 ::placeholder{
+    font-size: 2rem;
     color: var(--colorAzul);
 }
 
@@ -127,4 +130,43 @@ aside{
 #botonCopiar{
     visibility: hidden;
     display: inline-block;/*Centrar el texto del boton*/
+}
+
+/* TABLET */
+@media(max-width: 768px){
+    
+    #contenido{
+        flex-direction: column;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    #entrada{
+        height: 300px;
+    }
+
+    aside{
+        width: 90%;
+        height: 10%;
+    }    
+
+    #imagen{
+        display: none;
+    }
+
+    #botonCopiar{
+        width: 100%;
+    }
+}
+
+/* TELEFONO MOVIL */
+@media(max-width: 376px){
+    .botones{
+        flex-direction: column;
+    }
+    #botonEncriptar, #botonDesencriptar, #botonCopiar{
+        width: 100%;
+    }
 }
